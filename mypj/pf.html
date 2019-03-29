@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>PF</title>
+    <link rel="stylesheet" href="./pf.css" type="text/css">
+    <!--CSS를 파일로-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 부트 스트랩 사용코드-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--JQUERY 사용코드-->
+    <link href="jquery-sakura.css" rel="stylesheet" type="text/css">
+<script src="jquery-sakura.min.js"></script>
+</head>
+
+<body>
+
+    <section class="top">
+        <div class="top-area">
+                <a href="./dl.html"><input type ="button" value = "list"></a>
+                <a href="./join.html"><input type ="button" value = "가입"></a>
+        </div>
+    </section>
+    <div>
+
+    </div>
+
+    <div class="btn">
+    </div>
+    <div onclick="history.back();" class="page_cover"></div>
+    <div id="menu">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">WORK</a>
+            </li>
+            <li class="nav-item1">
+                <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">contact</a>
+            </li>
+        </ul>
+        <div onclick="history.back();" class="close"></div>
+    </div>
+
+    <footer class="footer">
+        <h2 class="title footer_title">Let´s start right Now!</h2>
+        <p class="footer_text">작업 준비 완료됐습니다. 편하실 때 연락 주세요!</p>
+        <address class="footer_address">
+            <a href="hbsowo58@gmail.com" class="mail">
+                <span class="icon_circle"></span>
+                <span class="footer_link_text"></span> </a>
+            <a href="tel:01090612699" class="footer_link link_phone">
+                <span class="icon_circle"></span>
+                <span class="footer_link_text"></span> </a>
+        </address>
+        <div class="footer_bottom">
+            <ul class="social">
+                <li class="social_item social_blog">
+                    <a href="www.naver.com" target="_blank">blog</a></li>
+                <li class="social_item social_codepen"><a href="https://codepen.io/nykim_/" target="_blank">codepen</a>
+                </li>
+                <li class="social_item social_github"><a href="https://github.com/hbsowo58" target="_blank">github</a>
+                </li>
+            </ul>
+            <p class="update">Last Updated On 0318, 2019</p>
+            <p class="copyright">© 2019 bs heo</p>
+        </div>
+    </footer>
+
+
+
+    <!--JQUERY 사용코드-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+
+        $(".btn").click(function () {
+            $("#menu,.page_cover,html").addClass("open");
+            window.location.hash = "#open";
+        });
+
+        window.onhashchange = function () {
+            if (location.hash != "#open") {
+                $("#menu,.page_cover,html").removeClass("open");
+            }
+        };
+
+        $('body').sakura();
+
+    </script>
+</body>
+
+</html>

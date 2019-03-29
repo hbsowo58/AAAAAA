@@ -1,0 +1,101 @@
+.cn {
+    background: #888;   /*배경색*/
+    color: #fff;          
+    text-decoration: line-through; /*줄긋기*/
+}
+.Heading{
+    color: black;
+    text-align: center;
+
+}
+.name{
+    text-align:center;
+}
+form{
+    text-align: center;
+    background:#3F51B5; /*0320 배경색상추가*/
+}
+.in{
+    text-align: center;
+}
+ul{
+    list-style:none; /*불릿 없애기 */
+    display: inline; /*0320방법을 인라인으로 밖에 모르겠다*/
+} 
+
+html.open {
+    overflow: hidden;
+}
+
+.btn {
+    background: #3F51B5; /*0320색상 통일*/
+    color: #555;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/menu.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+
+.close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#menu {
+    width: 150px;
+    height: 100%; /*꽉 차 있는 느낌을 줄 수 있게*/
+    position: fixed; /*어디든 메뉴를 부를 수 있게*/
+    top: 0px;
+    right: -152px;
+    z-index: 10;
+    border: 1px solid #c9c9c9;
+    background-color: white;
+    text-align: center;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    background-color: #3F51B5; /*0320 추가*/
+}
+
+#menu.open {
+    right: 0px;
+}
+
+.page_cover.open {
+    display: block;
+}
+
+.page_cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+    display: none;
+}
+
+ul li{
+    cursor: pointer; /*리스트에 마우스 올리면 손모양*/
+    background: #eee;
+    font-size: 30px;
+}
